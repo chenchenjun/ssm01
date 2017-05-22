@@ -10,11 +10,12 @@ public class DateFormatHelper
 	private DateFormatHelper() { }
 	
 	private final static String FORMAT_STR = "yyyy-MM-dd HH:mm:ss";
+	private final static String FORMAT_STR1 = "yyyy/MM/dd HH:mm:ss";
 	
 	public static String long2str(long time)
 	{
 		Date d = new Date(time);
-		DateFormat df = new SimpleDateFormat(FORMAT_STR);
+		DateFormat df = new SimpleDateFormat(FORMAT_STR1);
 		return df.format(d);
 	}
 //	public static long str2long(String str){
